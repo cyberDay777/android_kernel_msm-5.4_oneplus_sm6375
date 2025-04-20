@@ -384,7 +384,7 @@ static const struct file_operations disable_cpufreq_limit_proc_ops = {
 	.read		= disable_cpufreq_limit_proc_read,
 };
 
-int cpufreq_limits_init()
+int cpufreq_limits_init(void)
 {
 	int ret;
 
