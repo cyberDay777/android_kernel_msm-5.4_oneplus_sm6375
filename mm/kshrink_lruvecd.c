@@ -68,7 +68,7 @@ wait_queue_head_t kshrink_lruvecd_wait;
 spinlock_t l_inactive_lock;
 LIST_HEAD(lru_inactive);
 
-static is_kshrink_lruvecd(struct task_struct *tsk)
+static int is_kshrink_lruvecd(struct task_struct *tsk)
 {
 	return (kshirnk_lruvecd_pid == tsk->pid);
 }
