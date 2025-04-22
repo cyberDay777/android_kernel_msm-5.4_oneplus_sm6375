@@ -86,7 +86,7 @@ static struct nla_policy wsa_cmd_policy[WSA_ATTR_MAX + 1] = {
 };
 
 
-static int oplus_switch_to_secondary_antenna()
+static int oplus_switch_to_secondary_antenna(void)
 {
 #ifdef CONFIG_ONLY_CONTROL_GPIO
         if (!wsa_pinctl || !pinctrl_state_high) {
@@ -126,7 +126,7 @@ static int oplus_switch_to_secondary_antenna()
         return 0;
 }
 
-static int oplus_switch_to_prime_antenna()
+static int oplus_switch_to_prime_antenna(void)
 {
 #ifdef CONFIG_ONLY_CONTROL_GPIO
         if (!wsa_pinctl || !pinctrl_state_low) {
