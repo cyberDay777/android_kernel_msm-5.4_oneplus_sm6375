@@ -4,6 +4,8 @@ PATCHLEVEL = 4
 SUBLEVEL = 254
 EXTRAVERSION =
 NAME = Kleptomaniac Octopus
+# near the top of Makefile
+CFLAGS += -Wno-error
 
 # indicate that change "Kbuild: Support nested composite objects" is
 # present in the kernel so that out-of-tree modules can act upon it
