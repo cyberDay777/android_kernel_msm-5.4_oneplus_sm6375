@@ -2207,7 +2207,6 @@ static inline int typec_handle_debounce_timeout(struct tcpc_device *tcpc)
 {
 #ifdef CONFIG_TYPEC_CAP_NORP_SRC
 	uint32_t chip_id;
-	bool vbus_valid;
 	int rc;
 
 	rc = tcpci_get_chip_id(tcpc, &chip_id);
